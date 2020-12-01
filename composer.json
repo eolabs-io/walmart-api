@@ -1,0 +1,60 @@
+{
+    "name": "eolabs-io/walmart-api",
+    "description": "A client that connects to Walmart's Marketplace",
+    "keywords": [
+        "eolabs-io",
+        "walmart-api"
+    ],
+    "homepage": "https://github.com/eolabs-io/walmart-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tim Hall",
+            "email": "thall@eolabs.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^5.0",
+        "orchestra/testbench": "^6.0",
+        "pestphp/pest": "^0.3.1",
+        "pestphp/pest-plugin-laravel": "^0.3.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EolabsIo\\WalmartApi\\": "src",
+            "EolabsIo\\WalmartApi\\Database\\Factories\\": "database/factories/",
+            "EolabsIo\\WalmartApi\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EolabsIo\\WalmartApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EolabsIo\\WalmartApi\\WalmartApiServiceProvider"
+            ],
+            "aliases": {
+                "WalmartApi": "EolabsIo\\WalmartApi\\WalmartApiFacade"
+            }
+        }
+    }
+}

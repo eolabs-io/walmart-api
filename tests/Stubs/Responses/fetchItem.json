@@ -1,0 +1,21 @@
+{
+    "ItemResponse": [
+      {
+        "mart": "WALMART_US",
+        "sku": "30348_KFTest",
+        "wpid": "0RCPILAXM0C1",
+        "upc": "",
+        "gtin": "06932096330348",
+        "productName": "Kidsform Adjustable Infant Baby Carrier Sling Wrap Rider Carrier Backpack Front/Back Pack Khaki, Blue, Pink 4 Carrying Position Modes With Storage Bag",
+        "shelf": "[\"Home Page\",\"Baby\",\"Baby Activities & Gear\",\"Baby Carriers\"]",
+        "productType": "Baby Carriers",
+        "price": {
+          "currency": "USD",
+          "amount": 3
+        },
+        "publishedStatus": "PUBLISHED",
+        "lifecycleStatus": "ACTIVE"
+      }
+    ],
+    "totalItems": 1
+}

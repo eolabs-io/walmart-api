@@ -1,0 +1,35 @@
+{
+  "status": "SUCCESS",
+  "payload": [
+    {
+      "category": "Animal",
+      "subcategory": [
+        {
+          "subCategoryName": "Animal Accessories",
+          "subCategoryId": "559c5d924fff3d64de18bf45"
+        },
+        {
+          "subCategoryName": "Animal Food",
+          "subCategoryId": "559c5d8f4fff3d64de18bf3d"
+        },
+        {
+          "subCategoryName": "Animal Health & Grooming",
+          "subCategoryId": "559c5d90ed25b136f13a05df"
+        },
+        {
+          "subCategoryName": "Animal Other",
+          "subCategoryId": "56f2eb66208f9a06158f1748"
+        }
+      ]
+    },
+    {
+      "category": "Art & Craft",
+      "subcategory": [
+        {
+          "subCategoryName": "Art & Craft",
+          "subCategoryId": "571fdff7208f9a0cdb760a7f"
+        }
+      ]
+    }
+  ]
+}

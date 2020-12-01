@@ -1,0 +1,16 @@
+{
+    "expire_at": "1560973098000",
+    "issued_at": "1560972198000",
+    "is_valid": true,
+    "scopes": {
+        "reports": "view_only",
+        "item": "full_access",
+        "price": "no_access",
+        "lagtime": "full_access",
+        "feeds": "view_only",
+        "returns": "full_access",
+        "orders": "full_access",
+        "inventory": "full_access",
+        "content": "full_access"
+    }
+}

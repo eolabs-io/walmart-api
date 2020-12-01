@@ -1,0 +1,436 @@
+{
+    "ItemResponse": [
+      {
+        "mart": "WALMART_US",
+        "sku": "2792005",
+        "wpid": "0RE1TWYTKBKH",
+        "upc": "886859944807",
+        "gtin": "00886859944807",
+        "productName": "Carhartt Men's Rugged Vest",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Mens Clothing\",\"Mens Jackets & Outerwear\",\"Mens Jackets & Outerwear\"]",
+        "productType": "Outerwear Coats, Jackets & Vests",
+        "price": {
+          "currency": "USD",
+          "amount": 59.99
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4534200",
+        "wpid": "0RFL011ILHS3",
+        "upc": "889192592087",
+        "gtin": "00889192592087",
+        "productName": "Carhartt Women's Slim-Fit Layton Skinny Leg Jean",
+        "shelf": "[\"UNNAV\"]",
+        "productType": "Jeans",
+        "price": {
+          "currency": "USD",
+          "amount": 49.99
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4419464",
+        "wpid": "0RFUYQBZLPP5",
+        "upc": "889169324734",
+        "gtin": "00889169324734",
+        "productName": "Marmot Women's Minimalist Jacket",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Women\",\"Womens Coats & Jackets Shop All\"]",
+        "productType": "Outerwear Coats, Jackets & Vests",
+        "price": {
+          "currency": "USD",
+          "amount": 189
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "2928108",
+        "wpid": "0RH410PGF6E5",
+        "upc": "883956217001",
+        "gtin": "00883956217001",
+        "productName": "Olukai Women's Upena Sandal",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Shoes\",\"Womens Shoes\",\"Womens Sandals & Flip-flops\",\"Womens Sandals\"]",
+        "productType": "Sandals",
+        "price": {
+          "currency": "USD",
+          "amount": 89.95
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5261089",
+        "wpid": "0RH97MRCNV5N",
+        "upc": "192660552293",
+        "gtin": "00192660552293",
+        "productName": "Sorel Men's Madson 6' Waterproof Boot",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Fashion Brands\",\"SOREL\"]",
+        "productType": "Boots",
+        "price": {
+          "currency": "USD",
+          "amount": 190
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "NIJDJuuyUKhQQei",
+        "wpid": "0RJMCVFI97KQ",
+        "upc": "",
+        "gtin": "05828799302366",
+        "productName": "Electronic Cables",
+        "shelf": "[\"Home Page\",\"Electronics\",\"Computers\",\"Computer Accessories\",\"Computer Cables & Connectors\"]",
+        "productType": "Computer Cables",
+        "price": {
+          "currency": "USD",
+          "amount": 70
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "Your item is unpublished because the end date has passed. To republish your item, re-ingest the item with a new start and end date."
+          ]
+        },
+        "lifecycleStatus": "RETIRED"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4533814",
+        "wpid": "0RLL9EUVVD10",
+        "upc": "889192891555",
+        "gtin": "00889192891555",
+        "productName": "Carhartt Women's Force Delmont Graphic Zip-Front Hooded Sweatshirt",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Women\",\"Womens Sweaters\"]",
+        "productType": "Sweatshirts & Hoodies",
+        "price": {
+          "currency": "USD",
+          "amount": 59.99
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5310435",
+        "wpid": "0RLSXHJMCII7",
+        "upc": "192660208312",
+        "gtin": "00192660208312",
+        "productName": "Columbia Men's Chuterunner II Jacket",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Mens Clothing\",\"Mens Jackets & Outerwear\",\"Mens Jackets & Outerwear\"]",
+        "productType": "Outerwear Coats, Jackets & Vests",
+        "price": {
+          "currency": "USD",
+          "amount": 149.95
+        },
+        "publishedStatus": "SYSTEM_PROBLEM",
+        "unpublishedReasons": {
+          "reason": [
+            "I'm sorry, This unpublished reason code is currently unavailable!"
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "3427438",
+        "wpid": "0RMEAISSF4V9",
+        "upc": "889169893346",
+        "gtin": "00889169893346",
+        "productName": "Marmot Women's Trestles 30 Sleeping Bag",
+        "shelf": "[\"Home Page\",\"Sports & Outdoors\",\"Outdoor Sports\",\"Camping Gear\",\"Sleeping Bags\",\"All Sleeping Bags\"]",
+        "productType": "Sleeping Bags",
+        "price": {
+          "currency": "USD",
+          "amount": 99
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4911960",
+        "wpid": "0RNG6F9OM2TE",
+        "upc": "840054386015",
+        "gtin": "00840054386015",
+        "productName": "Lowa Women's Renegade GTX Mid Boot",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Shoes\",\"Womens Shoes\",\"Womens Boots\",\"Womens Boots\"]",
+        "productType": "Athletic Boots",
+        "price": {
+          "currency": "USD",
+          "amount": 239.95
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4RL3E7TaH9XMNU7",
+        "wpid": "0ROA3CD37TAG",
+        "upc": "",
+        "gtin": "05674399098693",
+        "productName": "Electronic Cables",
+        "shelf": "[\"Home Page\",\"Electronics\",\"Computers\",\"Computer Accessories\",\"Computer Cables & Connectors\"]",
+        "productType": "default",
+        "price": {
+          "currency": "USD",
+          "amount": 10
+        },
+        "publishedStatus": "PUBLISHED",
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5630947",
+        "wpid": "0RQKGXE7IEAS",
+        "upc": "686487434462",
+        "gtin": "00686487434462",
+        "productName": "Arcteryx Women's Solano Coat",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Women\",\"Womens Coats & Jackets Shop All\"]",
+        "productType": "default",
+        "price": {
+          "currency": "USD",
+          "amount": 278.95
+        },
+        "publishedStatus": "SYSTEM_PROBLEM",
+        "unpublishedReasons": {
+          "reason": [
+            "I'm sorry, This unpublished reason code is currently unavailable!"
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4420606",
+        "wpid": "0RQWE8ZXEIAF",
+        "upc": "889169336805",
+        "gtin": "00889169336805",
+        "productName": "Marmot Men's Fordham Jacket",
+        "shelf": "[\"Home Page\",\"Sports & Outdoors\",\"Outdoor Sports\",\"Hunting\",\"Hunting Clothing\",\"All Hunting Clothing\"]",
+        "productType": "Hunting Camouflage Accessories",
+        "price": {
+          "currency": "USD",
+          "amount": 325
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "There is no primary image for your item. After you re-ingest this item with a valid primary image, your item will be republished.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "3545919",
+        "wpid": "0RUD5HUYY0NX",
+        "upc": "849948011187",
+        "gtin": "00849948011187",
+        "productName": "Evolv Men's Cruzer Classic Shoe",
+        "shelf": "[\"Home Page\",\"Seasonal\",\"Back to School\",\"Shoes\",\"TestNike\"]",
+        "productType": "Athletic Shoes",
+        "price": {
+          "currency": "USD",
+          "amount": 74.95
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5210754",
+        "wpid": "0RUECSVSBNCV",
+        "upc": "888555358681",
+        "gtin": "00888555358681",
+        "productName": "Obermeyer Teen Girl's Haana Jacket",
+        "shelf": "[\"UNNAV\"]",
+        "productType": "T-Shirts",
+        "price": {
+          "currency": "USD",
+          "amount": 159.5
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "There is no primary image for your item. After you re-ingest this item with a valid primary image, your item will be republished.",
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "An internal error occurred while publishing this item. Please re-ingest the item.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "04496546160869",
+        "wpid": "0RVR1D7PSH41",
+        "upc": "",
+        "gtin": "04496546160869",
+        "productName": "HP_CLOTHING_CATEGORY_PRODUCT_NAME",
+        "shelf": "[\"Home Page\",\"Feature\",\"levis signature redirect\",\"Levi Strauss, Jeans, Jackets & Clothing\"]",
+        "productType": "Button-Up Shirts",
+        "price": {
+          "currency": "USD",
+          "amount": 90
+        },
+        "publishedStatus": "IN_PROGRESS",
+        "unpublishedReasons": {
+          "reason": [
+            "I'm sorry, This unpublished reason code is currently unavailable!"
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5169869",
+        "wpid": "0RW326S9PV3B",
+        "upc": "888663254257",
+        "gtin": "00888663254257",
+        "productName": "Mountain Hardwear Women's Monkey/2 Pullover",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Women\",\"Womens Tops & T-Shirts\",\"Womens Tops & T-Shirts\"]",
+        "productType": "Pajamas",
+        "price": {
+          "currency": "USD",
+          "amount": 149.95
+        },
+        "publishedStatus": "SYSTEM_PROBLEM",
+        "unpublishedReasons": {
+          "reason": [
+            "I'm sorry, This unpublished reason code is currently unavailable!"
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "3829582",
+        "wpid": "0RWVCEBGBI9O",
+        "upc": "888664177418",
+        "gtin": "00888664177418",
+        "productName": "Columbia Men's Bugaboo Omni-Heat Suspender Pant",
+        "shelf": "[\"Home Page\",\"Clothing\",\"Mens Clothing\",\"Mens Pants\",\"Mens Pants\"]",
+        "productType": "Pants",
+        "price": {
+          "currency": "USD",
+          "amount": 119.95
+        },
+        "publishedStatus": "SYSTEM_PROBLEM",
+        "unpublishedReasons": {
+          "reason": [
+            "I'm sorry, This unpublished reason code is currently unavailable!"
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "5848656",
+        "wpid": "0RXA6XP9LO34",
+        "upc": "840054406836",
+        "gtin": "00840054406836",
+        "productName": "Lowa Men's Renegade GTX Mid Boot",
+        "shelf": "[\"UNNAV\"]",
+        "productType": "Athletic Boots",
+        "price": {
+          "currency": "USD",
+          "amount": 239.95
+        },
+        "publishedStatus": "UNPUBLISHED",
+        "unpublishedReasons": {
+          "reason": [
+            "No shipping information was set up. Please re - ingest this item with a shipping price if you are submitting an over - ride.",
+            "You did not assign a tax code to your listing during item setup. Please re-ingest your item with a valid tax code."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      },
+      {
+        "mart": "WALMART_US",
+        "sku": "4364805",
+        "wpid": "0RXZMHYOF3YN",
+        "upc": "686487307056",
+        "gtin": "00686487307056",
+        "productName": "Arcteryx Women's RHO LT Zip Neck Hooded",
+        "shelf": "[\"UNNAV\"]",
+        "productType": "Sweatshirts & Hoodies",
+        "price": {
+          "currency": "USD",
+          "amount": 139
+        },
+        "publishedStatus": "SYSTEM_PROBLEM",
+        "unpublishedReasons": {
+          "reason": [
+            "This item is prohibited because it violates one of our legal or compliance policies. For more details, create a case for Partner Support and include the code COMP."
+          ]
+        },
+        "lifecycleStatus": "ACTIVE"
+      }
+    ],
+    "totalItems": 11440,
+    "nextCursor": "AoE/GjBSWFpNSFlPRjNZTjBTRUxMRVJfT0ZGRVI1QUFDOTZFNzcyRjc0NkE1OTU5QjUxQTdGMUJFQTY5OQ=="
+}
