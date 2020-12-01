@@ -15,6 +15,8 @@ class WalmartApiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('walmart-api.php'),
