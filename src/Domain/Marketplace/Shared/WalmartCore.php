@@ -35,10 +35,28 @@ abstract class WalmartCore
     public function get(string $endpoint = null, array $parameters = [])
     {
         try {
-            $parameters = ($this->hasNextCursor()) ? array_merge($parameters, $this->getNextCursorParameter()) : $parameters;
+            if ($this->hasNextCursor()) {
+                parse_str(Str::after($this->getNextCursor(), '?'), $parameters);
+            }
+
             $headers = $this->getHeaderFields();
             $response = Http::withHeaders($headers)
                             ->get($this->getUrl($endpoint), $parameters)
+                            ->throw();
+
+            return $this->processResponse($response);
+        } catch (RequestException $requestException) {
+            $this->handleException($requestException);
+        }
+    }
+
+    public function post(string $endpoint = null, array $parameters = [])
+    {
+        try {
+            $parameters = ($this->hasNextCursor()) ? array_merge($parameters, $this->getNextCursorParameter()) : $parameters;
+            $headers = $this->getHeaderFields();
+            $response = Http::withHeaders($headers)
+                            ->post($this->getUrl($endpoint), $parameters)
                             ->throw();
 
             return $this->processResponse($response);

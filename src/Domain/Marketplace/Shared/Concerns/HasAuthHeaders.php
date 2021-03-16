@@ -28,7 +28,7 @@ trait HasAuthHeaders
      */
     private function getClientId(): string
     {
-        return config('services.walmartApi.client_id');
+        return config('walmart.client_id');
     }
 
     /**
@@ -38,6 +38,6 @@ trait HasAuthHeaders
      */
     private function getClientSecret(): string
     {
-        return config('services.walmartApi.client_secret');
+        return config('walmart.client_secret');
     }
 }

@@ -53,7 +53,7 @@
                 "EolabsIo\\WalmartApi\\WalmartApiServiceProvider"
             ],
             "aliases": {
-                "WalmartApi": "EolabsIo\\WalmartApi\\WalmartApiFacade"
+
             }
         }
     }

@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Migrations\WalmartMigration;
 
-class CreateTaxonomiesTable extends Migration
+class CreateTaxonomiesTable extends WalmartMigration
 {
     /**
      * Run the migrations.
@@ -13,7 +12,7 @@ class CreateTaxonomiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('taxonomies', function (Blueprint $table) {
+        $this->schema->create('taxonomies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('category')->unique();
             $table->timestamps();
@@ -27,6 +26,6 @@ class CreateTaxonomiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxonomies');
+        $this->schema->dropIfExists('taxonomies');
     }
 }

@@ -85,7 +85,7 @@ class Auth
 
             return json_decode($response->getBody(), true);
         } catch (RequestException $exception) {
-            dd($exception);
+            dd('getAccessTokenResponse()', $exception);
         }
     }
 

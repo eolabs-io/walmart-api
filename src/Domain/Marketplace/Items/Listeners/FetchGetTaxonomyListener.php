@@ -10,6 +10,6 @@ class FetchGetTaxonomyListener
     public function handle(FetchGetTaxonomy $event)
     {
         $getTaxonomy = $event->getTaxonomy;
-        PerformFetchGetTaxonomy::dispatch($getTaxonomy)->onQueue('get-taxonomy');
+        PerformFetchGetTaxonomy::dispatch($getTaxonomy)->onQueue('wm-get-taxonomy');
     }
 }

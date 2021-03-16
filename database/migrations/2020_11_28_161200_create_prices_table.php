@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Migrations\WalmartMigration;
 
-class CreatePricesTable extends Migration
+class CreatePricesTable extends WalmartMigration
 {
     /**
      * Run the migrations.
@@ -13,7 +12,7 @@ class CreatePricesTable extends Migration
      */
     public function up()
     {
-        Schema::create('prices', function (Blueprint $table) {
+        $this->schema->create('prices', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('currency');
             $table->float('amount');
@@ -31,6 +30,6 @@ class CreatePricesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prices');
+        $this->schema->dropIfExists('prices');
     }
 }

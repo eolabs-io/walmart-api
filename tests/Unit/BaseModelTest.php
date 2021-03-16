@@ -90,7 +90,7 @@ abstract class BaseModelTest extends TestCase
     }
 
     // Helpers //
-    private function assertArraysEqual($array1, $array2)
+    public function assertArraysEqual($array1, $array2)
     {
         $sortedArray1 = Arr::sortRecursive($array1);
         $sortedArray2 = Arr::sortRecursive($array2);

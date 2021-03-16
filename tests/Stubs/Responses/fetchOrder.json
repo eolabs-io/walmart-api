@@ -1,0 +1,194 @@
+{
+  "order": {
+    "purchaseOrderId": "1792410114462",
+    "customerOrderId": "5101900976745",
+    "customerEmailId": "mannavarapu@walmartlabs.com",
+    "orderDate": 1241715945678,
+    "buyerId": "52e3962d-90e4-46e1-ab1c-ba579fac5a39",
+    "mart": "xyz",
+    "isGuest": true,
+    "shippingInfo": {
+      "phone": "7777777777",
+      "estimatedDeliveryDate": 1241715945678,
+      "estimatedShipDate": 1241715945678,
+      "methodCode": "Express",
+      "postalAddress": {
+        "name": "Suresh R",
+        "address1": "860 W California Ave",
+        "address2": "xyz",
+        "city": "Sunnyvale",
+        "state": "CA",
+        "postalCode": "94086",
+        "country": "USA",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "orderLines": {
+      "orderLine": [
+        {
+          "lineNumber": "2",
+          "item": {
+            "productName": "4 Naturals Next Day Cycle",
+            "sku": "567259563",
+            "imageUrl": "https://i5-qa.walmartimages.com/asr/f03975d8-184c-4bc0-8478-54f2b7c1cef7_2.3bb72b734984871d53899fe476ec44c0.jpeg",
+            "weight": {
+              "value": "xyz",
+              "unit": "10"
+            }
+          },
+          "charges": {
+            "charge": [
+              {
+                "chargeType": "PRODUCT",
+                "chargeName": "ItemPrice",
+                "chargeAmount": {
+                  "currency": "USD",
+                  "amount": 798
+                },
+                "tax": {
+                  "taxName": "Tax1",
+                  "taxAmount": {
+                    "currency": "USD",
+                    "amount": 798
+                  }
+                }
+              }
+            ]
+          },
+          "orderLineQuantity": {
+            "unitOfMeasurement": "EACH",
+            "amount": "1"
+          },
+          "statusDate": 1241715945678,
+          "orderLineStatuses": {
+            "orderLineStatus": [
+              {
+                "status": "Created",
+                "statusQuantity": {
+                  "unitOfMeasurement": "EACH",
+                  "amount": "1"
+                },
+                "cancellationReason": "xyz",
+                "trackingInfo": {
+                  "shipDateTime": 1241715945678,
+                  "carrierName": {
+                    "otherCarrier": "xyz",
+                    "carrier": "FED_EX"
+                  },
+                  "methodCode": "Standard",
+                  "carrierMethodCode": 19,
+                  "trackingNumber": "001792410114462199",
+                  "trackingURL": "http://www.fedex.com/Tracking?action=track=english=us=x=001792410114462199"
+                },
+                "returnCenterAddress": {
+                  "name": "xyz",
+                  "address1": "xyz",
+                  "address2": "xyz",
+                  "city": "Sunnyvale",
+                  "state": "CA",
+                  "postalCode": "123",
+                  "country": "CA",
+                  "dayPhone": "9999999",
+                  "emailId": "xyz@walmart.com"
+                }
+              }
+            ]
+          },
+          "refund": {
+            "refundId": "123",
+            "refundComments": "xyz",
+            "refundCharges": {
+              "refundCharge": [
+                {
+                  "refundReason": "INCORRECT_ITEM_RECEIVED",
+                  "charge": {
+                    "chargeType": "PRODUCT",
+                    "chargeName": "ItemPrice",
+                    "chargeAmount": {
+                      "currency": "USD",
+                      "amount": 798
+                    },
+                    "tax": {
+                      "taxName": "Tax1",
+                      "taxAmount": {
+                        "currency": "USD",
+                        "amount": 798
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "originalCarrierMethod": "503",
+          "referenceLineId": "xyz",
+          "fulfillment": {
+            "fulfillmentOption": "S2H",
+            "shipMethod": "Standard",
+            "storeId": "xyz",
+            "pickUpDateTime": 1241715945678,
+            "pickUpBy": "xyz",
+            "shippingProgramType": "THREE_TO_FIVE_DAY"
+          },
+          "intentToCancel": "xyz",
+          "configId": "xyz",
+          "sellerOrderId": "xyz"
+        }
+      ]
+    },
+    "paymentTypes": [
+      "CREDIT_CARD",
+      "DEBIT_CARD",
+      "COD"
+    ],
+    "orderSummary": {
+      "totalAmount": {
+        "currencyAmount": 123,
+        "currencyUnit": "USD"
+      },
+      "orderSubTotals": [
+        {
+          "subTotalType": "xyz",
+          "totalAmount": {
+            "currencyAmount": 123,
+            "currencyUnit": "USD"
+          }
+        }
+      ]
+    },
+    "pickupPersons": [
+      {
+        "name": {
+          "completeName": "xyz",
+          "firstName": "xyz",
+          "middleName": "xyz",
+          "lastName": "xyz",
+          "generalSuffix": "xyz",
+          "maturitySuffix": "xyz",
+          "titleOfRespect": "xyz",
+          "empty": false
+        },
+        "phone": {
+          "id": "ed475ea3-6a09-4c03-a95f-17871be5ceba",
+          "areaCode": "xyz",
+          "extension": "xyz",
+          "completeNumber": "xyz",
+          "type": "MOBILE",
+          "subscriberNumber": "xyz",
+          "countryCode": "xyz",
+          "phoneValidity": {
+            "validationType": "CALL",
+            "validationStatus": "SUCCESS",
+            "validatedDate": 1403685556000,
+            "validatedBy": "xyz"
+          }
+        }
+      }
+    ],
+    "shipNode": {
+      "type": "3PLFulfilled",
+      "name": "xyz",
+      "id": "123"
+    }
+  }
+}

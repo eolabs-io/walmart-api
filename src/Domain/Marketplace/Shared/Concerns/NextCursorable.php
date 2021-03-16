@@ -12,10 +12,15 @@ trait NextCursorable
 
     public function checkForNextCursor(Collection $results): self
     {
-        $cursor = $results->get('nextCursor');
+        $cursor = data_get($results, $this->getNextCursorAccessor());
         $this->setNextCursor($cursor);
 
         return $this;
+    }
+
+    public function getNextCursorAccessor(): string
+    {
+        return 'nextCursor';
     }
 
     public function clearNextCursor(): self

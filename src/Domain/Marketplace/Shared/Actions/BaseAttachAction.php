@@ -21,7 +21,12 @@ abstract class BaseAttachAction
     public function execute($model)
     {
         $this->model = $model;
+        $this->beforeCreateFromList();
         $this->createFromList();
+    }
+
+    public function beforeCreateFromList()
+    {
     }
 
     protected function createFromList()
@@ -31,5 +36,39 @@ abstract class BaseAttachAction
         }
     }
 
+    // protected function createFromList()
+    // {
+    //     foreach ($this->list as $value) {
+    //         $model = $this->createItem($value);
+    //         $this->applyAssociateActions($value, $model);
+    //         $model->push();
+    //         $this->applyAtachActions($value, $model);
+    //     }
+    // }
+
     abstract protected function createItem($list);
+
+    public function applyAssociateActions($list, $model)
+    {
+        foreach ($this->associateActions() as $associateAction) {
+            (new $associateAction($list))->execute($model);
+        }
+    }
+
+    protected function associateActions(): array
+    {
+        return [];
+    }
+
+    public function applyAtachActions($list, $model)
+    {
+        foreach ($this->attachActions() as $attachAction) {
+            (new $attachAction($list))->execute($model);
+        }
+    }
+
+    protected function attachActions(): array
+    {
+        return [];
+    }
 }

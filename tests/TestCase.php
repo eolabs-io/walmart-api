@@ -11,7 +11,7 @@ abstract class TestCase extends Orchestra
     {
         parent::setUp();
 
-        $this->loadMigrationsFrom(realpath(dirname(__DIR__) .'/database/migrations'));
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
     /**
@@ -22,9 +22,34 @@ abstract class TestCase extends Orchestra
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('services.walmartApi', [
+        $app['config']->set('walmart', [
             'client_id' => 'walmartApi-client-id',
             'client_secret' => 'walmartApi-client-secret',
+        ]);
+
+        $default = 'testbench'; // 'mysql';
+
+        $app['config']->set('database.default', $default);
+
+        $app['config']->set('walmart.database.connection', $default);
+
+        $app['config']->set('database.connections.testbench', [
+            'driver'   => env('DB_DRIVER', 'sqlite'),
+            'database' => env('DB_DATABASE'),
+            'username' => env('DB_USERNAME'),
+            'prefix'   => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ]);
+
+        $app['config']->set('database.connections.mysql', [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => 'LiftedNaturalsWalmartMPTest',
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
         ]);
     }
 

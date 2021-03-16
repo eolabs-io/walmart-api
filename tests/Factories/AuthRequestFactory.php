@@ -46,6 +46,24 @@ class AuthRequestFactory
         return $this;
     }
 
+    public function fakeResponseAlwaysValid(): self
+    {
+        $file = __DIR__ . '/../Stubs/Responses/fetchToken.json';
+        $tokenResponse = file_get_contents($file);
+
+        $file = __DIR__ . '/../Stubs/Responses/fetchTokenDetail.json';
+        $tokenDetailResponse = file_get_contents($file);
+
+        Http::fake([
+            $this->endpoint => Http::response($tokenResponse, 200),
+
+            $this->endpoint.'/detail' => Http::response($tokenDetailResponse, 200),
+        ]);
+
+
+        return $this;
+    }
+
     public function fakeResponseWithError(): self
     {
         return $this;

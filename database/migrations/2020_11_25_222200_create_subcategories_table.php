@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Migrations\WalmartMigration;
 
-class CreateSubcategoriesTable extends Migration
+class CreateSubcategoriesTable extends WalmartMigration
 {
     /**
      * Run the migrations.
@@ -13,7 +12,7 @@ class CreateSubcategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sub_categories', function (Blueprint $table) {
+        $this->schema->create('sub_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('sub_category_name')->unique();
             $table->string('sub_category_id')->unique();
@@ -31,6 +30,6 @@ class CreateSubcategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sub_categories');
+        $this->schema->dropIfExists('sub_categories');
     }
 }

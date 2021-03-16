@@ -10,6 +10,6 @@ class FetchItemsListener
     public function handle(FetchItems $event)
     {
         $items = $event->items;
-        PerformFetchItems::dispatch($items)->onQueue('items');
+        PerformFetchItems::dispatch($items)->onQueue('wm-items');
     }
 }

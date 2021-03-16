@@ -45,9 +45,4 @@ class PerformFetchGetTaxonomy implements ShouldQueue
             // $this->handleRequestException($exception, $delay);
         }
     }
-
-    // public function middleware()
-    // {
-    //     return [AmazonMwsThrottlingMiddleware::forGetMatchingProducts()];
-    // }
 }

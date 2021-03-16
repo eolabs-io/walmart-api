@@ -19,6 +19,6 @@ class AttachSubcategoryAction extends BaseAttachAction
     {
         $values = $this->getFormatedAttributes($list, new SubCategory());
 
-        $this->model->subcategories()->create($values);
+        $this->model->subcategories()->updateOrCreate($values);
     }
 }

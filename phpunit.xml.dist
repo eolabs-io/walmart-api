@@ -8,7 +8,7 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
-         stopOnFailure="false">
+         stopOnFailure="true">
     <testsuites>
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
@@ -23,11 +23,13 @@
         </whitelist>
     </filter>
     <php>
-        <env name="DB_CONNECTION" value="sqlite"/>
-        <env name="DB_DATABASE" value=":memory:"/>
-        <!-- <env name="DB_DATABASE" value="WalmartApiTest"/> -->
-        <env name="DB_USERNAME" value="root"/>
-        <env name="DB_PASSWORD" value=""/>
+        <env name="DB_USERNAME" value="root" />
+
+        <!-- <env name="DB_DRIVER" value="mysql" /> -->
+        <!-- <env name="DB_DATABASE" value="LiftedNaturalsWalmartMPTest" /> -->
+
+        <env name="DB_DRIVER" value="sqlite" />
+        <env name="DB_DATABASE" value=":memory:" />
     </php>
     <logging>
         <log type="tap" target="build/report.tap"/>
