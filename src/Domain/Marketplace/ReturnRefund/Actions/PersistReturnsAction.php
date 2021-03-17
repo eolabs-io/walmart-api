@@ -25,7 +25,7 @@ class PersistReturnsAction extends BasePersistAction
         $attributes = ['return_order_id' => data_get($list, 'returnOrderId')];
 
         // If ReturnOrder exist Return and dont create
-        if ($returnOrder = ReturnOrder::first($attributes)) {
+        if ($returnOrder = ReturnOrder::where($attributes)->first()) {
             return $returnOrder;
         }
 

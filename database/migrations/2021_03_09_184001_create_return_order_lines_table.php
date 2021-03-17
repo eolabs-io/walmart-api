@@ -16,7 +16,7 @@ class CreateReturnOrderLinesTable extends WalmartMigration
             $table->bigIncrements('id');
             $table->bigInteger('return_order_line_number');
             $table->bigInteger('sales_order_line_number');
-            $table->string('seller_order_id');
+            $table->string('seller_order_id')->nullable();
             $table->string('return_reason');
             $table->string('purchase_order_id');
             $table->bigInteger('purchase_order_line_number');

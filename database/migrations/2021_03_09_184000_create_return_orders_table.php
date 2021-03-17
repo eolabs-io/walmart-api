@@ -16,8 +16,8 @@ class CreateReturnOrdersTable extends WalmartMigration
             $table->bigIncrements('id');
             $table->string('return_order_id');
             $table->string('customer_email_id');
-            $table->string('return_type');
-            $table->string('replacement_customer_order_id');
+            $table->string('return_type')->nullable();
+            $table->string('replacement_customer_order_id')->nullable();
             $table->unsignedBigInteger('customer_name_id');
             $table->string('customer_order_id');
             $table->dateTime('return_order_date');
