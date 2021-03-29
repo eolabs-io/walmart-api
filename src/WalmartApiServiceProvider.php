@@ -6,11 +6,14 @@ use Illuminate\Support\ServiceProvider;
 use EolabsIo\WalmartApi\Domain\Marketplace\Items\Items;
 use EolabsIo\WalmartApi\Domain\Marketplace\Orders\Orders;
 use EolabsIo\WalmartApi\Domain\Marketplace\Items\GetTaxonomy;
+use EolabsIo\WalmartApi\Domain\Marketplace\Inventory\Inventory;
 use EolabsIo\WalmartApi\Domain\Marketplace\ReturnRefund\Returns;
+use EolabsIo\WalmartApi\Domain\Marketplace\Inventory\WFSInventory;
 use EolabsIo\WalmartApi\Domain\Marketplace\Auth\Auth as WalmartapiAuth;
-use EolabsIo\WalmartApi\Domain\Marketplace\ReturnRefund\Providers\EventServiceProvider as ReturnRefundEventServiceProvider;
 use EolabsIo\WalmartApi\Domain\Marketplace\Items\Providers\EventServiceProvider as ItemsEventServiceProvider;
 use EolabsIo\WalmartApi\Domain\Marketplace\Orders\Providers\EventServiceProvider as OrdersEventServiceProvider;
+use EolabsIo\WalmartApi\Domain\Marketplace\Inventory\Providers\EventServiceProvider as InventoryEventServiceProvider;
+use EolabsIo\WalmartApi\Domain\Marketplace\ReturnRefund\Providers\EventServiceProvider as ReturnRefundEventServiceProvider;
 
 class WalmartApiServiceProvider extends ServiceProvider
 {
@@ -25,7 +28,7 @@ class WalmartApiServiceProvider extends ServiceProvider
             }
 
             $this->publishes([
-                __DIR__.'/../database/migrations' => database_path('migrations'),
+                __DIR__.'/../database/migrations' => database_path('migrations/walmart'),
             ], 'walmart-migrations');
 
             $this->publishes([
@@ -42,6 +45,7 @@ class WalmartApiServiceProvider extends ServiceProvider
         $this->app->register(ItemsEventServiceProvider::class);
         $this->app->register(OrdersEventServiceProvider::class);
         $this->app->register(ReturnRefundEventServiceProvider::class);
+        $this->app->register(InventoryEventServiceProvider::class);
 
         // Automatically apply the package configuration
         $this->mergeConfigFrom(__DIR__.'/../config/walmart.php', 'walmart');
@@ -65,6 +69,14 @@ class WalmartApiServiceProvider extends ServiceProvider
 
         $this->app->singleton('walmartapi-returns', function () {
             return new Returns;
+        });
+
+        $this->app->singleton('walmartapi-inventory', function () {
+            return new Inventory;
+        });
+
+        $this->app->singleton('walmartapi-wfs-inventory', function () {
+            return new WFSInventory;
         });
     }
 }

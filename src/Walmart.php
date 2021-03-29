@@ -10,7 +10,7 @@ class Walmart
      *
      * @var bool
      */
-    public static $runsMigrations = true;
+    public static $runsMigrations = false;
 
 
     /**
@@ -21,6 +21,18 @@ class Walmart
     public static function ignoreMigrations()
     {
         static::$runsMigrations = false;
+
+        return new static;
+    }
+
+    /**
+     * Configure Walmart MP to not register its migrations.
+     *
+     * @return static
+     */
+    public static function shouldRunMigrations()
+    {
+        static::$runsMigrations = true;
 
         return new static;
     }
