@@ -1,0 +1,203 @@
+{
+    "meta": {
+      "totalCount": 40,
+      "limit": 10,
+      "nextCursor": "?sellerId=151&limit=10&offset=10"
+    },
+    "returnOrders": [
+      {
+        "returnOrderId": "103738048909818825",
+        "customerEmailId": "emailID123456@relay.walmart.com",
+        "customerName": {
+          "firstName": "Jane",
+          "lastName": "Doe"
+        },
+        "customerOrderId": "1234567891234",
+        "refundMode": "POST_DELIVERY",
+        "returnOrderDate": "2019-02-21T01:01:08.000Z",
+        "returnType": "REPLACEMENT",
+        "replacementCustomerOrderId": "1234567891234",
+        "returnByDate": "2019-03-23T01:01:06.000Z",
+        "totalRefundAmount": {
+          "currencyAmount": 127.45,
+          "currencyUnit": "USD"
+        },
+        "returnLineGroups": [
+          {
+            "groupNo": 1,
+            "returnLines": [
+              {
+                "returnOrderLineNumber": 1
+              }
+            ],
+            "labels": [
+              {
+                "labelImageURL": "https://i5.walmartimages.com/asr/0a0c7462-7a85-4d3d-b7cf-91738b6883d4_1.c2c4f7b05e1cfe67910134779aa7c571.png",
+                "carrierInfoList": [
+                  {
+                    "carrierId": "11",
+                    "carrierName": "FEDEX",
+                    "serviceType": "FedEx Ground",
+                    "trackingNo": "785611449666"
+                  }
+                ]
+              }
+            ],
+            "returnExpectedFlag": true
+          }
+        ],
+        "returnOrderLines": [
+          {
+            "returnOrderLineNumber": 1,
+            "salesOrderLineNumber": 1,
+            "returnReason": "ARRIVED_LATE",
+            "purchaseOrderId": "4790210558890",
+            "sellerOrderId": "123",
+            "purchaseOrderLineNumber": 1,
+            "rechargeReason": "Recharge Reason",
+            "returnCancellationReason": "Cancellation Reason",
+            "item": {
+              "sku": "ANTL_GDL-0700",
+              "productName": "Antlion Audio ModMic Wireless Attachable Boom Microphone",
+              "itemWeight": {
+                "unitOfMeasure": "POUND",
+                "measurementValue": 5
+              }
+            },
+            "charges": [
+              {
+                "chargeCategory": "PRODUCT",
+                "chargeName": "ItemPrice",
+                "chargePerUnit": {
+                  "currencyAmount": 119.95,
+                  "currencyUnit": "USD"
+                },
+                "isDiscount": false,
+                "isBillable": true,
+                "tax": [
+                  {
+                    "taxName": "Tax1",
+                    "excessTax": {
+                      "currencyAmount": 0,
+                      "currencyUnit": "USD"
+                    },
+                    "taxPerUnit": {
+                      "currencyAmount": 7.5,
+                      "currencyUnit": "USD"
+                    }
+                  }
+                ],
+                "excessCharge": {
+                  "currencyAmount": 0,
+                  "currencyUnit": "USD"
+                },
+                "references": [
+                  {
+                    "name": "isAdjustment",
+                    "value": "false"
+                  }
+                ]
+              }
+            ],
+            "unitPrice": {
+              "currencyAmount": 119.95,
+              "currencyUnit": "USD"
+            },
+            "itemReturnSettings": [
+                {
+                    "name": "itemReturnSetting_name",
+                    "value": "itemReturnSetting_value"
+                }
+            ],
+            "chargeTotals": [
+              {
+                "name": "lineUnitPrice",
+                "value": {
+                  "currencyAmount": 119.95,
+                  "currencyUnit": "USD"
+                }
+              },
+              {
+                "name": "lineProductTaxes",
+                "value": {
+                  "currencyAmount": 7.5,
+                  "currencyUnit": "USD"
+                }
+              },
+              {
+                "name": "lineTotalTaxes",
+                "value": {
+                  "currencyAmount": 7.5,
+                  "currencyUnit": "USD"
+                }
+              },
+              {
+                "name": "lineSubTotal",
+                "value": {
+                  "currencyAmount": 119.95,
+                  "currencyUnit": "USD"
+                }
+              },
+              {
+                "name": "lineTotal",
+                "value": {
+                  "currencyAmount": 127.45,
+                  "currencyUnit": "USD"
+                }
+              }
+            ],
+            "currentDeliveryStatus": "NOT_SHIPPED",
+            "currentRefundStatus": "NOT_REFUNDED",
+            "cancellableQty": 0,
+            "quantity": {
+              "unitOfMeasure": "EACH",
+              "measurementValue": 1
+            },
+            "returnExpectedFlag": true,
+            "isFastReplacement": false,
+            "isKeepIt": false,
+            "lastItem": false,
+            "refundedQty": 1,
+            "rechargeableQty": 0,
+            "refundChannel": "SELLER_AUTO_REFUND",
+            "returnTrackingDetail": [
+              {
+                "sequenceNo": 1,
+                "eventTag": "RETURN_IN_TRANSIT",
+                "eventDescription": "A MARKET_PLACE Return in Transit",
+                "eventTime": "2019-02-23T00:46:11.000Z",
+                "references": [
+                  {
+                    "name": "ReturnDate",
+                    "value": "2019-02-21T01:01:08.000Z"
+                  },
+                  {
+                    "name": "SLA for Receiving Items",
+                    "value": "7 Days"
+                  }
+                ]
+              },
+              {
+                "sequenceNo": 0,
+                "eventTag": "RETURN_INITIATED",
+                "eventDescription": "Return initiated for MARKET_PLACE",
+                "eventTime": "2019-02-21T01:01:08.000Z",
+                "references": [
+                  {
+                    "name": "ReturnDate",
+                    "value": "2019-02-21T01:01:08.000Z"
+                  },
+                  {
+                    "name": "FedexTrackingLink",
+                    "value": "https://www.fedex.com/apps/fedextrack/?tracknumbers=785611449666"
+                  }
+                ]
+              }
+            ],
+            "status": "COMPLETED",
+            "statusTime": "2019-03-02T05:45:45.000Z"
+          }
+        ]
+      }
+    ]
+}

@@ -32,7 +32,7 @@ class CreateReturnOrderLinesTable extends WalmartMigration
             $table->boolean('last_item');
             $table->double('refunded_qty');
             $table->double('rechargeable_qty');
-            $table->string('refund_channel');
+            $table->string('refund_channel')->nullable();
             $table->string('status');
             $table->dateTime('status_time');
             $table->string('current_delivery_status');
