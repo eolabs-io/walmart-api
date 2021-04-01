@@ -29,7 +29,7 @@ class Item extends WalmartModel
 
     public function price()
     {
-        return $this->hasOne(Price::class);
+        return $this->hasOne(Price::class)->withDefault();
     }
 
     /**

@@ -17,8 +17,10 @@ class AssociatePriceAction extends BaseAssociateAction
 
     protected function createItem($list)
     {
-        $values = $this->getFormatedAttributes($list, new Price());
+        $values = $this->getFormatedAttributes($list, new Price);
+        $price = $this->model->price;
+        $price->fill($values);
 
-        $this->model->price()->create($values);
+        $price->save();
     }
 }
