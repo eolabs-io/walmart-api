@@ -25,6 +25,7 @@ class Item extends WalmartModel
                     'product_type',
                     'published_status',
                     'lifecycle_status',
+                    'name',
                 ];
 
     public function price()

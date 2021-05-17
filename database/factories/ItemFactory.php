@@ -33,6 +33,7 @@ class ItemFactory extends Factory
             'product_type' => $this->faker->text,
             'published_status' => $this->faker->randomElement(['PUBLISHED', 'READY_TO_PUBLISH', 'IN_PROGRESS', 'UNPUBLISHED', 'STAGE', 'SYSTEM_PROBLEM']),
             'lifecycle_status' => $this->faker->randomElement(['ACTIVE' , 'ARCHIVED', 'RETIRED']),
+            'name' => $this->faker->text,
         ];
     }
 }
