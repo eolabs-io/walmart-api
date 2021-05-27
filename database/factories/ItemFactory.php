@@ -5,6 +5,7 @@ namespace EolabsIo\WalmartApi\Database\Factories;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\Item;
+use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\Price;
 
 class ItemFactory extends Factory
 {
@@ -34,6 +35,7 @@ class ItemFactory extends Factory
             'published_status' => $this->faker->randomElement(['PUBLISHED', 'READY_TO_PUBLISH', 'IN_PROGRESS', 'UNPUBLISHED', 'STAGE', 'SYSTEM_PROBLEM']),
             'lifecycle_status' => $this->faker->randomElement(['ACTIVE' , 'ARCHIVED', 'RETIRED']),
             'name' => $this->faker->text,
+            'price_id' => Price::factory(),
         ];
     }
 }

@@ -19,8 +19,8 @@ class AssociatePriceAction extends BaseAssociateAction
     {
         $values = $this->getFormatedAttributes($list, new Price);
         $price = $this->model->price;
-        $price->fill($values);
+        $price->fill($values)->save();
 
-        $price->save();
+        $this->model->price()->associate($price);
     }
 }

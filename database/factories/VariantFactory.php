@@ -3,16 +3,16 @@
 namespace EolabsIo\WalmartApi\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\Price;
+use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\Variant;
 
-class PriceFactory extends Factory
+class VariantFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Price::class;
+    protected $model = Variant::class;
 
     /**
      * Define the model's default state.
@@ -21,9 +21,6 @@ class PriceFactory extends Factory
      */
     public function definition()
     {
-        return [
-            'currency' => $this->faker->currencyCode,
-            'amount' => $this->faker->randomFloat(2, 0, 1000),
-        ];
+        return [];
     }
 }

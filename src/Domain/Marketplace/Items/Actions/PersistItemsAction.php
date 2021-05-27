@@ -20,10 +20,10 @@ class PersistItemsAction extends BasePersistAction
 
     protected function createItem($list): Model
     {
-        $values = $this->getFormatedAttributes($list, new Item());
+        $values = $this->getFormatedAttributes($list, new Item);
         $attributes = ['sku' => data_get($list, 'sku'),];
 
-        $item = Item::updateOrCreate($attributes, $values);
+        $item = Item::firstOrNew($attributes, $values);
 
         foreach ($this->associateActions() as $associateActions) {
             (new $associateActions($list))->execute($item);

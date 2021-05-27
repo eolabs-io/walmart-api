@@ -26,11 +26,12 @@ class Item extends WalmartModel
                     'published_status',
                     'lifecycle_status',
                     'name',
+                    'price_id',
                 ];
 
     public function price()
     {
-        return $this->hasOne(Price::class)->withDefault();
+        return $this->belongsTo(Price::class)->withDefault();
     }
 
     /**

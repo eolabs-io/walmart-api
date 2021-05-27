@@ -5,9 +5,9 @@ namespace EolabsIo\WalmartApi\Tests\Feature\Items;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use EolabsIo\WalmartApi\Tests\TestCase;
-use EolabsIo\WalmartApi\Domain\Marketplace\Items\Events\FetchItems;
+use EolabsIo\WalmartApi\Domain\Marketplace\Items\Events\FetchItemSearch;
 
-class ItemsCommandTest extends TestCase
+class ItemSearchCommandTest extends TestCase
 {
     protected function setUp(): void
     {
@@ -18,13 +18,13 @@ class ItemsCommandTest extends TestCase
     }
 
     /** @test */
-    public function it_can_execute_item_artisan_command()
+    public function it_can_execute_item_search_artisan_command()
     {
-        $this->artisan('walmartApi:items')
+        $this->artisan('walmartApi:item-search')
              ->assertExitCode(0);
 
         // Assert that event is called
-        Event::assertDispatched(FetchItems::class, function ($event) {
+        Event::assertDispatched(FetchItemSearch::class, function ($event) {
             return true;
         });
     }

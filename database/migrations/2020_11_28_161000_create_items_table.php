@@ -24,7 +24,10 @@ class CreateItemsTable extends WalmartMigration
             $table->string('product_type')->nullable();
             $table->string('published_status')->nullable();
             $table->string('lifecycle_status')->nullable();
+            $table->unsignedBigInteger('price_id');
             $table->timestamps();
+
+            $table->foreign('price_id')->references('id')->on('prices');
         });
     }
 

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Migrations\WalmartMigration;
 
-class CreatePricesTable extends WalmartMigration
+class CreateVariantMetasTable extends WalmartMigration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,13 @@ class CreatePricesTable extends WalmartMigration
      */
     public function up()
     {
-        $this->schema->create('prices', function (Blueprint $table) {
+        $this->schema->create('variant_metas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('currency');
-            $table->float('amount');
-            $table->unsignedBigInteger('item_id')->unique();
+            $table->string('name');
+            $table->unsignedBigInteger('variant_id');
             $table->timestamps();
 
-            $table->foreign('item_id')->references('id')->on('items');
+            $table->foreign('variant_id')->references('id')->on('variants');
         });
     }
 
@@ -30,6 +29,6 @@ class CreatePricesTable extends WalmartMigration
      */
     public function down()
     {
-        $this->schema->dropIfExists('prices');
+        $this->schema->dropIfExists('variant_metas');
     }
 }

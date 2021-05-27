@@ -27,11 +27,21 @@ trait ItemSearchable
         return $this;
     }
 
+    public function getSearchUPC(): string
+    {
+        return $this->searchQueryParameters['upc'];
+    }
+
     public function withSearchGTIN(string $gtin = null): self
     {
         $this->searchQueryParameters['gtin'] = $gtin;
 
         return $this;
+    }
+
+    public function getSearchGTIN(): string
+    {
+        return $this->searchQueryParameters['gtin'];
     }
 
     public function getSearchQueryParameters(): array

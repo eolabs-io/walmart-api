@@ -2,10 +2,11 @@
 
 namespace EolabsIo\WalmartApi\Domain\Marketplace\Items\Models;
 
-use EolabsIo\WalmartApi\Database\Factories\PriceFactory;
+use EolabsIo\WalmartApi\Database\Factories\CategoryFactory;
+use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\Property;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Models\WalmartModel;
 
-class Price extends WalmartModel
+class Category extends WalmartModel
 {
 
     /**
@@ -14,9 +15,14 @@ class Price extends WalmartModel
      * @var array
      */
     protected $fillable = [
-                    'currency',
-                    'amount',
+                    'name',
+                    'property_id',
                 ];
+
+    public function property()
+    {
+        return $this->belongsTo(Property::class);
+    }
 
     /**
      * Create a new factory instance for the model.
@@ -25,6 +31,6 @@ class Price extends WalmartModel
      */
     public static function newFactory()
     {
-        return PriceFactory::new();
+        return CategoryFactory::new();
     }
 }

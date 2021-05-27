@@ -2,23 +2,22 @@
 
 namespace EolabsIo\WalmartApi\Domain\Marketplace\Items\Actions;
 
-use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\SubCategory;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Actions\BaseAttachAction;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Concerns\FormatsModelAttributes;
 
-class AttachSubcategoryAction extends BaseAttachAction
+class AttachCategoriesAction extends BaseAttachAction
 {
     use FormatsModelAttributes;
 
     public function getKey(): string
     {
-        return 'subcategory';
+        return 'categories';
     }
 
     protected function createItem($list)
     {
-        $values = $this->getFormatedAttributes($list, new SubCategory);
+        $values = ['name' => $list];
 
-        $this->model->subcategories()->updateOrCreate($values);
+        $this->model->categories()->updateOrCreate($values);
     }
 }

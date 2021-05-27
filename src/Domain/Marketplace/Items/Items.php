@@ -41,7 +41,7 @@ class Items extends WalmartCore
         $endpoint = $this->getBranchUrl() . '/walmart/search';
         $parameters = $this->getSearchQueryParameters();
 
-        return $this->get($endpoint, $parameters);
+        return $this->get($endpoint, $parameters)->merge(['query_parameters' => $parameters]);
     }
 
     public function count()

@@ -2,10 +2,11 @@
 
 namespace EolabsIo\WalmartApi\Domain\Marketplace\Items\Models;
 
-use EolabsIo\WalmartApi\Database\Factories\PriceFactory;
+use EolabsIo\WalmartApi\Database\Factories\VariantValueFactory;
+use EolabsIo\WalmartApi\Domain\Marketplace\Items\Models\VariantData;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Models\WalmartModel;
 
-class Price extends WalmartModel
+class VariantValue extends WalmartModel
 {
 
     /**
@@ -14,9 +15,16 @@ class Price extends WalmartModel
      * @var array
      */
     protected $fillable = [
-                    'currency',
-                    'amount',
-                ];
+        'name',
+        'value',
+        'variant_data_id',
+    ];
+
+
+    public function variantData()
+    {
+        return $this->belongsTo(VariantData::class);
+    }
 
     /**
      * Create a new factory instance for the model.
@@ -25,6 +33,6 @@ class Price extends WalmartModel
      */
     public static function newFactory()
     {
-        return PriceFactory::new();
+        return VariantValueFactory::new();
     }
 }
