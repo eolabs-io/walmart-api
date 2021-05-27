@@ -16,7 +16,7 @@ class CreatePropertiesTable extends WalmartMigration
             $table->bigIncrements('id');
             $table->string('variant_items_num')->nullable();
             $table->string('num_reviews')->nullable();
-            $table->unsignedBigInteger('variant_id');
+            $table->unsignedBigInteger('variant_id')->nullable();
             $table->boolean('next_day_eligible');
             $table->timestamps();
 
