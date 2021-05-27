@@ -14,8 +14,8 @@ class CreatePropertiesTable extends WalmartMigration
     {
         $this->schema->create('properties', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('variant_items_num');
-            $table->string('num_reviews');
+            $table->string('variant_items_num')->nullable();
+            $table->string('num_reviews')->nullable();
             $table->unsignedBigInteger('variant_id');
             $table->boolean('next_day_eligible');
             $table->timestamps();
