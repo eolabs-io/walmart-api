@@ -18,13 +18,13 @@ class CreateItemVariantsTable extends WalmartMigration
             $table->string('upc')->nullable();
             $table->string('gtin')->nullable();
             $table->boolean('is_market_place_item');
-            $table->float('customer_rating');
+            $table->float('customer_rating')->nullable();
             $table->boolean('free_shipping');
             $table->unsignedBigInteger('offer_count');
             $table->unsignedBigInteger('price_id');
             $table->text('description');
             $table->string('title');
-            $table->string('brand');
+            $table->string('brand')->nullable();
             $table->string('product_type');
             $table->unsignedBigInteger('property_id')->nullable();
             $table->timestamps();
