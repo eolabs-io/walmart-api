@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use EolabsIo\WalmartApi\Domain\Marketplace\Shared\Migrations\WalmartMigration;
 
-class CreateImagesTable extends WalmartMigration
+class CreateWmImagesTable extends WalmartMigration
 {
     /**
      * Run the migrations.
