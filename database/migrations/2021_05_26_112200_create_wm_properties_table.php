@@ -17,7 +17,7 @@ class CreateWmPropertiesTable extends WalmartMigration
             $table->string('variant_items_num')->nullable();
             $table->string('num_reviews')->nullable();
             $table->unsignedBigInteger('variant_id')->nullable();
-            $table->boolean('next_day_eligible');
+            $table->boolean('next_day_eligible')->nullable();
             $table->timestamps();
 
             $table->foreign('variant_id')->references('id')->on('variants');
